@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <!-- Improved/meta tags for SEO -->
+  <meta name="description" content="MagicBox Gift Concierge — premium corporate, personal and seasonal gifts in Lagos, Nigeria. Curated luxury gifting for clients, teams, and special occasions.">
+  <!-- Added meta keywords requested by client -->
+  <meta name="keywords" content="Gift in Nigeria, Nigeria gift store, Corporate gifts in Lagos, Nigeria, Africa, Corporate souvenirs, Birthday Gifts, Farewell gifts, Honorary gifts, Christmas gift, Christmas hampers, Valentine gifts, Money bouquet, Gift packages, Under 50k gifts, Under 100k gifts, HNI gifts, Executive hampers">
+  <link rel="canonical" href="https://magicboxgiftsconcierge.com/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MagicBox Gift Concierge — Luxury Gifting Made Magical">
+  <meta property="og:description" content="Curated corporate, personal and seasonal gifts in Lagos. Thoughtful, bespoke boxes for clients, teams and special occasions.">
+  <meta property="og:url" content="https://magicboxgiftsconcierge.com/">
+  <meta property="og:site_name" content="MagicBox Gift Concierge">
+  <meta property="og:image" content="https://magicboxgiftsconcierge.com/assets/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MagicBox Gift Concierge — Luxury Gifting Made Magical">
+  <meta name="twitter:description" content="Curated corporate, personal and seasonal gifts in Lagos. Thoughtful, bespoke boxes for clients, teams and special occasions.">
+  <meta name="twitter:image" content="https://magicboxgiftsconcierge.com/assets/images/logo.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Structured data for Organization / LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "MagicBox Gift Concierge",
+    "url": "https://magicboxgiftsconcierge.com/",
+    "logo": "https://magicboxgiftsconcierge.com/assets/images/logo.png",
+    "telephone": ["+2349021147301", "+2348131820241"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lagos",
+      "addressCountry": "NG"
+    },
+    "sameAs": [
+      "https://www.instagram.com/magicbox_ng/",
+      "https://www.linkedin.com/company/magicbox-ng",
+      "https://x.com/magicbox_ng",
+      "https://www.tiktok.com/@magicbox_ng"
+    ],
+    "description": "Premium corporate, personal and seasonal gift concierge in Lagos, Nigeria.",
+    "keywords": "Gift in Nigeria, Nigeria gift store, Corporate gifts in Lagos, Nigeria, Africa, Corporate souvenirs, Birthday Gifts, Farewell gifts, Honorary gifts, Christmas gift, Christmas hampers, Valentine gifts, Money bouquet, Gift packages, Under 50k gifts, Under 100k gifts, HNI gifts, Executive hampers"
+  }
+  </script>
+
+  <title>MagicBox Gift Concierge</title>
+  <link rel="stylesheet" href="style/main.css"/>
+  <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet"/>
+  <script defer src="js/script.js"></script>
+
+  <!-- Styles to ensure WhatsApp float is visible and accessible -->
+  <style>
+    .whatsapp-float{
+      position: fixed;
+      right: 20px;
+      bottom: 90px; /* changed from 20px to 90px */
+      background: #25D366;
+      color: #fff;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index: 9999;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease;
+    }
+    .whatsapp-float:hover,
+    .whatsapp-float:focus{
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+      outline: none;
+    }
+    .whatsapp-float:focus{
+      box-shadow: 0 0 0 3px rgba(37,211,102,0.2);
+    }
+    .whatsapp-float i{ color:#fff; font-size:22px; line-height:1; }
+
+    /* Back to top button (below WhatsApp) - updated to golden */
+    .back-to-top{
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #D4AF37; /* golden color */
+      color: #111; /* dark icon/text for contrast */
+      width: 56px; /* matched to WhatsApp */
+      height: 56px; /* matched to WhatsApp */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index: 9998;
+      box-shadow: 0 6px 18px rgba(212,175,55,0.25);
+      text-decoration: none;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: opacity .18s ease, transform .18s ease, visibility .18s;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+    .back-to-top.show{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-to-top:hover,
+    .back-to-top:focus{
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(212,175,55,0.30);
+      outline: none;
+    }
+    .back-to-top:focus{
+      box-shadow: 0 0 0 4px rgba(212,175,55,0.18);
+    }
+    .back-to-top i{ color:#111; font-size:22px; line-height:1; }
+
+    /* screen-reader only helper */
+    .sr-only{
+      position: absolute;
+      width:1px;
+      height:1px;
+      padding:0;
+      margin:-1px;
+      overflow:hidden;
+      clip:rect(0,0,0,0);
+      white-space:nowrap;
+      border:0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#"><img src="assets/images/logo.png" alt="MagicBox Logo" class="logo"></a>
+      
+    <button class="menu-toggle" id="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+    </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#hero"><i class="bi bi-house-door-fill"></i> Home</a>
+        <a href="#about"><i class="bi bi-info-circle-fill"></i> About</a>
+        <a href="#services"><i class="bi bi-box-seam"></i> Services</a>
+        <a href="#founder"><i class="bi bi-person-heart"></i> Founder</a>
+        <a href="#gallery"><i class="bi bi-images"></i> Gallery</a>
+        <a href="#contact"><i class="bi bi-envelope-fill"></i> Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-inner container">
+    <div class="hero-textbox">
+      <h1>
+        <span class="fairy-icon">🧚‍♀️</span>
+        Luxury Gifting <br><span class="highlight">made Magical</span>
+      </h1>
+      <p class="tagline">Thoughtfully curated gifts for your clients, loved ones and team!</p>
+      <!-- Hero CTA: ensure external link is safe -->
+      <a href="https://magicboxgiftsconcierge.com/" class="hero-btn" target="_blank" rel="noopener noreferrer">
+        Build Your Box <i class="bi bi-box2-heart-fill"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2><i class="bi bi-bookmark-heart"></i> About Us</h2>
+      <p>At <strong>MagicBox Gift Concierge</strong>, we're passionate about creating unforgettable gifting experiences  Our journey began with a challenge faced by our founder, Fairy Oyin, who struggled to put together a thoughtful gift for her brother. This experience revealed a gap in the market for a structured and seamless gifting process, from conceptualization to delivery.
+
+We understand the importance of finding the perfect gift for various occasions, whether it's for clients, employees, a special event, or someone who seems to have everything. Our mission is to simplify the gifting process, ensuring that your gifts convey love, appreciation, and unity.
+</p>
+    </div>
+  </section>
+
+    <section class="bridge-section">
+  <div class="bridge-overlay">
+    <h2>“Every Gift Tells a Story”</h2>
+    <p>Experience the joy of connection, curated with care.</p>
+  </div>
+</section>
+
+  <!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2><i class="bi bi-box-fill"></i> Our Services</h2>
+
+    <div class="service">
+      <h3><i class="bi bi-search-heart"></i> Gift Consultation</h3>
+      <p>We help you choose the right gift based on your budget and needs. Sourcing, checks, presentation.</p>
+    </div>
+
+    <div class="service">
+      <h3><i class="bi bi-cart"></i> Retail</h3>
+      <p>Explore our diverse product range and enjoy easy online shopping</p><br>
+      <p><a class="shop-link" href="https://magicboxgiftsconcierge.com" target="_blank">Build Your Box <i class="bi bi-arrow-up-right"></i></a></p>
+    </div>
+
+    <div class="service">
+      <h3><i class="bi bi-building"></i> Corporate Gifts</h3>
+      <p>Custom artisanal gifts, branded for any season, any occasion.</p>
+    </div>
+
+    <div class="service">
+      <h3><i class="bi bi-gift"></i> Gift Station Services</h3>
+      <p>Guests curate souvenirs live at events. Unique experience.</p>
+    </div>
+
+    <div class="service">
+      <h3><i class="bi bi-balloon-heart"></i> Proposal Planning & Intimate Setup</h3>
+      <p>We help you create unforgettable proposal moments or private celebrations: styled, curated, and emotionally timeless.</p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Founder Section -->
+  <section id="founder" class="founder-section">
+    <div class="container founder-content">
+      <h2><i class="bi bi-person-bounding-box"></i> Meet the Founder</h2>
+      <div class="founder-image">
+        <img src="assets/images/founder.jpeg" alt="Oyindamola Olajide">
+      </div>
+      <div class="founder-text">
+        
+        <h3>Oyindamola Olajide</h3>
+        <p><i class="bi bi-award"></i> Oyindamola Olajide, a renowned Gift Curator and Relationship Strategist, partners with businesses, executives, and high-achieving individuals to strengthen connections and drive revenue growth through expertly crafted, high-impact gifting solutions. With a focus on building loyalty and long-term partnerships, </p>
+        <p><i class="bi bi-stars"></i> Her experience over the years in telesales marketing,  customer relations, and communication has contributed to the success of Magic Box over the years with over 5,000 satisfied and loyal clients spanning from individuals and corporate entities. Under her leadership, Magic Box has earned awards such as BN Hustle winner 2020, and also given her the opportunity to publish gifting articles on digital platforms like Bella Naija and punch newspaper. Oyindamola's bespoke approach transforms gifting into a strategic tool for meaningful engagement and sustainable success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <h2><i class="bi bi-collection"></i> Our Work</h2>
+      <div class="slideshow-container" id="slideshow">
+        <img src="assets/images/gallery1.jpeg" class="slide-image active" alt="Gallery image 1 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+        <img src="assets/images/gallery2.jpeg" class="slide-image" alt="Gallery image 2 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+        <img src="assets/images/gallery3.jpeg" class="slide-image" alt="Gallery image 3 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+        <img src="assets/images/gallery4.jpeg" class="slide-image" alt="Gallery image 4 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery5.jpeg" class="slide-image" alt="Gallery image 5 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery6.jpeg" class="slide-image" alt="Gallery image 6 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery7.jpeg" class="slide-image" alt="Gallery image 7 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery8.jpeg" class="slide-image" alt="Gallery image 8 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery9.jpeg" class="slide-image" alt="Gallery image 9 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery10.jpeg" class="slide-image" alt="Gallery image 10 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery11.jpeg" class="slide-image" alt="Gallery image 11 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery12.jpeg" class="slide-image" alt="Gallery image 12 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery13.jpeg" class="slide-image" alt="Gallery image 13 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery14.jpeg" class="slide-image" alt="Gallery image 14 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery15.jpeg" class="slide-image" alt="Gallery image 15 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery16.jpeg" class="slide-image" alt="Gallery image 16 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery17.jpeg" class="slide-image" alt="Gallery image 17 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery18.jpeg" class="slide-image" alt="Gallery image 18 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery19.jpeg" class="slide-image" alt="Gallery image 19 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery20.jpeg" class="slide-image" alt="Gallery image 20 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery21.jpeg" class="slide-image" alt="Gallery image 21 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery22.jpeg" class="slide-image" alt="Gallery image 22 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery23.jpeg" class="slide-image" alt="Gallery image 23 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery24.jpeg" class="slide-image" alt="Gallery image 24 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+      <img src="assets/images/gallery25.jpeg" class="slide-image" alt="Gallery image 25 — MagicBox Gift Concierge" loading="lazy" decoding="async">
+        <button class="slide-btn prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="slide-btn next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-gallery-section" id="videos">
+  <div class="container">
+    <h2 class="gallery-title">Experience the Magic in Motion</h2>
+    <p class="gallery-subtitle">A visual journey into our events, gift stations, and behind-the-scenes moments.</p>
+
+    
+    <div class="video-grid">
+      <div class="video-thumb">
+        <video id="video1"
+        muted 
+        controls poster="assets/images/thumb1.jpg" aria-label="MagicBox behind the scenes video 1">
+          <source src="./assets/videos/video 1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="custom-play-btn" data-video="video1">
+          <i class="bi bi-play-circle-fill"></i>
+        </div>
+        
+      </div>
+
+    
+          <div class="video-thumb">
+            <video id="video2" muted controls poster="assets/images/thumb2.jpg" aria-label="MagicBox behind the scenes video 2">
+              <source src="./assets/videos/video 2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="custom-play-btn" data-video="video2">
+              <i class="bi bi-play-circle-fill"></i>
+            </div>
+          </div>
+
+          
+            <div class="video-thumb">
+              <video id="video3" muted controls poster="assets/images/thumb3.jpg" aria-label="MagicBox behind the scenes video 3">
+                <source src="./assets/videos/video 3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="custom-play-btn" data-video="video3">
+                <i class="bi bi-play-circle-fill"></i>
+              </div>
+            </div>
+
+        
+              <div class="video-thumb">
+                <video id="video4" muted controls poster="assets/images/thumb4.jpg" aria-label="MagicBox behind the scenes video 4">
+                  <source src="./assets/videos/video 4.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="custom-play-btn" data-video="video4">
+                  <i class="bi bi-play-circle-fill"></i>
+                </div>
+              </div>
+
+           
+                <div class="video-thumb">
+                  <video id="video5" muted controlsList="noaudio"
+                  controls poster="assets/images/thumb5.jpg" aria-label="MagicBox behind the scenes video 5">
+                    <source src="./assets/videos/video 5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="custom-play-btn" data-video="video5">
+                    <i class="bi bi-play-circle-fill"></i>
+                  </div>
+                </div>
+
+               
+                  <div class="video-thumb">
+                    <video id="video6" muted controls poster="assets/images/thumb6.jpg" aria-label="MagicBox behind the scenes video 6">
+                      <source src="./assets/videos/video 6.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                    <div class="custom-play-btn" data-video="video6">
+                      <i class="bi bi-play-circle-fill"></i>
+                    </div>
+                  </div>
+
+                 
+                    <div class="video-thumb">
+                      <video id="video7" muted controls poster="assets/images/thumb7.jpg" aria-label="MagicBox behind the scenes video 7">
+                        <source src="./assets/videos/video 7.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="custom-play-btn" data-video="video7">
+                        <i class="bi bi-play-circle-fill"></i>
+                      </div>
+                    </div>
+
+                    
+                      <div class="video-thumb">
+                        <video id="video8" muted controls poster="assets/images/thumb8.jpg" aria-label="MagicBox behind the scenes video 8">
+                          <source src="./assets/videos/video 8.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="custom-play-btn" data-video="video8">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
+                      </div>
+
+                      
+                        <div class="video-thumb">
+                          <video id="video9" muted controls poster="assets/images/thumb9.jpg" aria-label="MagicBox behind the scenes video 9">
+                            <source src="./assets/videos/video 9.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                          <div class="custom-play-btn" data-video="video9">
+                            <i class="bi bi-play-circle-fill"></i>
+                          </div>
+                        </div>       
+                        
+                          <div class="video-thumb">
+                            <video id="video10" muted controls poster="assets/images/thumb10.jpg" aria-label="MagicBox behind the scenes video 10">
+                              <source src="./assets/videos/video 10.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <div class="custom-play-btn" data-video="video10">
+                              <i class="bi bi-play-circle-fill"></i>
+                            </div>
+                          </div>   
+                        </div>
+
+</section>
+  <!-- Company Logos Section -->
+  <section class="company-section">
+    <div class="container">
+      <h2><i class="bi bi-people"></i> Our Partners</h2>
+      <img src="assets/images/companies.jpeg" alt="Partnered Companies" class="company-logos">
+    </div>
+  </section>
+<section class="gift-slider-section">
+  <div class="container">
+    <div class="gift-slider" id="giftSlider">
+      <!-- Slides -->
+      <div class="slide active">
+        <img src="assets/images/slides/slide 1.jpeg" alt="Slide 1">
+        <div class="slide-text">
+          <h3>Say No More to Boring Client Gifts</h3>
+          <p>Say goodbye to the generic, wasteful, and unflattering gift basket. We specialize in thoughtfully designed, custom business gifts for conferences, events, and memorable holidays.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/slides/slide 2.jpeg" alt="Slide 2">
+        <div class="slide-text">
+          <h3>Conference & Virtual Event Gifts/Souvenirs</h3>
+          <p>Wow your attendees with custom boxes at your events, retreats, or conferences. We tailor gifts to reflect your brand’s values and audience.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/slides/slide 3.jpeg" alt="Slide 3">
+        <div class="slide-text">
+          <h3>Team Onboarding Kit</h3>
+          <p>Welcome new team members with personalized onboarding kits. We recommend items tailored to department, budget, and values for a great first impression.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/slides/slide 4.jpeg" alt="Slide 4">
+        <div class="slide-text">
+          <h3>Tastefully Branded Holiday Gift Boxes</h3>
+          <p>Celebrate your team and partners with quality, customized year-end gifts that reflect your brand’s identity and make a lasting impact.</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="assets/images/slides/slide 5.jpeg" alt="Slide 5">
+        <div class="slide-text">
+          <h3>Branded Gifts that Share Your Company’s Value</h3>
+          <p>From 35 to 10,000+ units, we handle sourcing, shipping, and customization — ensuring functional, affordable, and impressive gifts year-round.</p>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <button class="nav-btn prev" onclick="prevSlide()"><i class="bi bi-chevron-left"></i></button>
+      <button class="nav-btn next" onclick="nextSlide()"><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+
+  <div class="container">
+    <h2>Ready to Elevate Your Corporate Gifting?</h2>
+    <p>Fill out our form for personalized solutions and we’ll be in touch within 1 business day (usually sooner).</p>
+    <p><strong>MOQ – 100 packages</strong></p>
+
+  <form id="corporateGiftForm" action="https://formspree.io/f/mqayjpeo" method="POST">
+  <div class="form-group">
+    <div class="input-icon">
+      <i class="bi bi-person"></i>
+      <input type="text" id="name" name="name" placeholder="Name" required>
+    </div>
+    <div class="input-icon">
+      <i class="bi bi-envelope"></i>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-icon">
+      <i class="bi bi-telephone"></i>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    </div>
+    <div class="input-icon">
+      <i class="bi bi-gift"></i>
+      <input type="number" id="giftCount" name="giftCount" placeholder="Number of Gifts" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-icon">
+      <i class="bi bi-calendar-heart"></i>
+      <input type="text" id="occasion" name="occasion" placeholder="Occasion" required>
+    </div>
+    <div class="input-icon">
+      <i class="bi bi-cash-coin"></i>
+      <input type="text" id="budget" name="budget" placeholder="Total Gifting Budget" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-icon">
+      <i class="bi bi-calendar-event"></i>
+      <input type="date" id="eventDate" name="eventDate" placeholder="Date of Event" required>
+    </div>
+    <div class="input-icon">
+      <i class="bi bi-megaphone"></i>
+      <input type="text" id="referral" name="referral" placeholder="How Did You Hear About Us?" required>
+    </div>
+  </div>
+
+  <div class="input-icon">
+    <i class="bi bi-chat-dots"></i>
+    <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn-hero">Send</button>
+</form>
+
+<div id="formSuccess" class="success-message" style="display: none;">
+  ✅ Message Sent Successfully!
+</div>
+
+  </div>
+<br>
+    <div class="container">
+      <h2><i class="bi bi-chat-left-text"></i> Contact Us</h2>
+      <p>We're always happy to hear from you!</p>
+      <p><i class="bi bi-telephone"></i> <a href="tel:09021147301">09021147301</a>, <a href="tel:08131820241">08131820241</a></p>
+      <p><i class="bi bi-envelope"></i> <a href="mailto:magicboxnigeria@gmail.com">magicboxnigeria@gmail.com</a>, <a href="mailto:themagicfairies@gmail.com">themagicfairies@gmail.com</a></p>
+      <p><i class="bi bi-globe"></i> Socials: IG, TikTok, Twitter, LinkedIn - <code>@magicbox_ng</code></p>
+    </div>
+    <div class="social-icons">
+  <a href="https://www.instagram.com/magicbox_ng/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-instagram"></i> Instagram
+  </a>
+  <a href="https://www.linkedin.com/company/magicbox-ng" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-linkedin"></i> LinkedIn
+  </a>
+  <a href="https://x.com/magicbox_ng?t=CcdKB2bGFmHrIcBM9xu6YQ&s=09" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-twitter-x"></i> Twitter
+  </a>
+  <a href="https://www.tiktok.com/@magicbox_ng?_t=ZM-8xOIwnlhcNM&_r=1" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-tiktok"></i> TikTok
+  </a>
+  <a href="https://wa.me/2349021147301" target="_blank" rel="noopener noreferrer">
+    <i class="bi bi-whatsapp"></i> WhatsApp
+  </a>
+</div>
+  </section>
+
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/2349021147301" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp" role="button">
+    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    <span class="sr-only">Chat with MagicBox on WhatsApp</span>
+  </a>
+
+  <!-- Back to top button (initially hidden, appears after scroll) -->
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top" role="button">
+    <i class="bi bi-chevron-up" aria-hidden="true"></i>
+    <span class="sr-only">Back to top</span>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MagicBox Gift Concierge. All rights reserved.</p>
+      <p><i class="bi bi-heart-fill"></i> Crafted with love by the MagicBox Team</p>
+    </div>
+  </footer>
+
+  <!-- Small script to toggle and handle Back-to-top -->
+  <script>
+    (function(){
+      const backBtn = document.getElementById('backToTop');
+      const showAfter = 300; // px scrolled before showing button
+
+      // smooth scroll on click
+      backBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // toggle visibility on scroll
+      function toggleBackBtn(){
+        if(window.scrollY > showAfter){
+          backBtn.classList.add('show');
+        } else {
+          backBtn.classList.remove('show');
+        }
+      }
+
+      // init
+      window.addEventListener('scroll', toggleBackBtn, { passive: true });
+      // run once
+      toggleBackBtn();
+    })();
+  </script>
+
+</body>
+</html>
